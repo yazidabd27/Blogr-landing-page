@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* header */
+
+header{
+    background: linear-gradient(to right,hsl(13, 100%, 72%), hsl(353, 100%, 62%) );
+    border-end-start-radius: 80px;
+    overflow: hidden;
+    height: 85vh;
+}
+
+header nav{
+    z-index: 1000;
+}
+
+
+header .btn-light{
+    color: hsl(356, 100%, 66%);
+    border: none !important;
+}
+
+header .btn-light:hover{
+    color: #fff;
+    background-color: hsl(355, 100%, 74%);
+}
+
+#learn-more:hover{
+    color: hsl(355, 100%, 74%);
+}
+
+.text-grey,
+.toggle{
+    color: hsl(240, 2%, 79%) !important;
+}
+
+.toggle img.rotate{
+    transform: rotate(180deg);
+}
+
+@media (min-width:992px) {
+    .toggle:hover{
+        color: #fff !important;
+        text-decoration: underline;
+    }
+}
+
+.dropdown-menu.show{
+    display: block;
+}
+
+header button{
+    font-size: 14px !important;
+}
+
+header > img{
+    position: relative;
+    top: -1500px;
+    left: -500px;
+}
+
+header .description{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header h1{
+    font-size: 56px;
+}
+
+/* designed section */
+
+#designed{
+    padding: 100px 120px;
+}
+
+#designed .content{
+    height: 70vh;
+}
+
+#designed .title{
+    color: hsl(208, 49%, 24%);
+    font-weight: bold;
+}
+
+#designed p{
+    color:  hsl(207, 13%, 34%);
+}
+
+#designed .ill-edit{
+    position: relative;
+    top: -180px;
+    right: -150px;
+}
+
+.ill-edit img{
+    height: 700px;
+}
+
+/* phones section */
+
+#phones{
+    background:linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%)) ;
+    position: relative;
+    border-radius: 0 80px ;    
+    margin-bottom: 80px;
+}
+
+#phones .content{
+    height: 60vh;
+    overflow: hidden;
+}
+
+#phones .ill-phones img:nth-child(1){
+    position: relative;
+    left: -215px;
+    transform: translateY(-50%);
+}
+
+#phones .ill-phones img:nth-child(2){
+    position: absolute;
+    left: 120px;
+    top: -70px;
+}
+
+/* laptop section */
+
+#laptop .ill-lap img{
+    position: relative;
+    left: -250px;
+    height: 700px;
+}
+
+#laptop .title{
+    color: hsl(208, 49%, 24%);
+    font-weight: bold;
+}
+
+#laptop p{
+    color:  hsl(207, 13%, 34%);
+}
+
+/* footer */
+
+footer{
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0 80px 0 0;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: hsl(240, 2%, 79%);
+}
+
+@media (max-width:412px) {
+
+    header{
+        background:linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)) ;
+        height: 65vh;
+    }
+
+    header > img{
+        top: -550px;
+        left: -442px;
+        width: 400%;
+    }
+
+    header nav{
+        padding: 50px 30px !important;
+    }
+
+    .navbar-nav{
+        border-bottom: 1px solid #ccc;
+    }
+
+    header .description{
+        padding: 0 60px;
+        top: 35%;
+    }
+
+    header h1{
+        font-size: 32px;
+    }
+
+    #designed .content{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+
+    .show{
+        position: absolute;
+        background-color: #fff;
+        text-align: center;
+        width: 80%;
+        left: 10%;
+        top: 100px;
+        padding: 20px 0;
+        border-radius: 5px;
+    }
+
+    .dropdown-menu{
+        text-align: center !important;
+        background-color: hsl(240, 2%, 94%)!important;
+        border: none !important;
+        margin: 20px  !important;
+    }
+
+    .dropdown-menu a{
+        color: hsl(208, 49%, 24%) !important;
+        margin-bottom: 10px;
+    }
+
+    nav form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle,
+    nav form button:first-child{
+        color: hsl(208, 49%, 24%) !important;
+        font-weight: bold;
+    }
+
+    nav form button:nth-child(2){
+        background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: #fff;
+    }
+
+    #designed{
+        padding:0;
+        margin: 150px 0 250px 0;
+    }
+
+    #designed .ill-edit{
+        top: 0;
+        right: 0;
+    }
+
+    #designed img{
+        height: auto;
+    }
+
+    #laptop .content,
+    #phones .content{
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .content{
+        height: auto;
+        text-align: center;
+    }
+
+    .content p{
+        width: 100% !important;
+    }
+
+    .ill-phones img:first-child{
+        width: 100%;
+        left: 0 !important;
+        transform: translateY(-25%) !important;
+    }
+
+    .ill-phones img:nth-child(2){
+        width: 100%;
+        left: 0 !important;
+        top: -200px !important;
+    }
+
+    .ill-lap img{
+        left: 0 !important;
+        height: auto !important;
+    }
+
+    #phones .description{
+        position: relative;
+        top: -195px;
+        padding: 0 53px;
+    }
+
+    footer > div{
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    footer > div > div{
+        text-align: center;
+    }  
+
+}
+
+
